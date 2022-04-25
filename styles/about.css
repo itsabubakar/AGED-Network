@@ -1,0 +1,64 @@
+.about {
+    display: flex;
+    justify-content: center;
+    margin: 0 40px;
+}
+
+.about-conc {
+    max-width: 1000px;
+}
+
+.about-img-info {
+    display: flex;
+    gap: 100px;
+}
+
+.about-img img{
+    width: 250px;
+}
+
+.about-img-text {
+    align-self: center;
+}
+
+.about-p{
+    max-width: 400px;
+}
+
+.bottom {
+    margin-top: 60px;
+}
+
+.staff-items {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-gap: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.staff-img img {
+    width: 200px;
+    height: 200px;
+}
+
+.staff-name {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.staff-role {
+    margin-bottom: 10px;
+}
+
+.our-mission {
+    display: flex;
+    justify-content: center;
+    margin: 40px 40px;
+}
+
+.mission {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+

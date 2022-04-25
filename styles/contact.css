@@ -1,0 +1,49 @@
+.contact {
+    background-color: #eeefedf6;
+    height: 300px;
+}
+
+.contact-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    height: 100%;
+}
+
+.contacts {
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+}
+
+.contacts > *{
+    margin-bottom: 1rem;
+}
+
+.phone {
+    background: transparent;
+    background-image: url("../assets/icons/icons8-callback-80.png");
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    border: none;
+}
+
+.email {
+    background: transparent;
+    background-image: url("../assets/icons/icons8-email-open-50.png");
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    border: none;
+}
+
+.address {
+    background: transparent;
+    background-image: url("../assets/icons/icons8-address-50.png");
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    border: none;
+}

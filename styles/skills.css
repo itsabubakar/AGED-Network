@@ -1,0 +1,56 @@
+img {
+    width: 100%;
+}
+
+.skill-program-conc {
+    background-color: #E0DEDE;
+}
+
+.skill-programs {
+    padding: 40px 40px;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    justify-content: center;
+    grid-gap: 25px;
+    margin-bottom: 80px;
+}
+
+.skill {
+    background-color: #fff;
+    padding: 10px;
+    max-width: 250px;
+    margin-top: 30px;
+}
+
+.skill-name {
+    margin: 10px 5px;
+    color: rgba(0, 0, 0, 0.671);
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+
+.skill-info {
+    margin: 10px 5px;
+    font-size: 1.2rem;
+}
+
+.apply-btn {
+    margin: 15px 0;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    background-color: #15EB89;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 9px;
+}
+
+.apply-btn:hover {
+    color: #000;
+}
