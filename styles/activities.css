@@ -21,6 +21,10 @@ img {
     margin-bottom: 60px;
 }
 
+.activities-img img {
+    height: 180px;
+}
+
 .activities-name {
     margin: 10px 5px;
     color: rgba(0, 0, 0, 0.671);
@@ -47,6 +51,20 @@ img {
 .apply-btn:hover {
     color: #000;
     border-bottom: 1px solid #15EB89;
+}
+
+@media (max-width:700px) {
+    .activities {
+        grid-template-columns: 300px;
+        justify-content: center;
+    }
+}
+
+@media (min-width:700px) and (max-width: 1000px){
+    .activities {
+        grid-template-columns: repeat(2, 300px);
+        justify-content: center;
+    }
 }
 
 .other-activities {
@@ -98,4 +116,42 @@ img {
 
 .read-more:hover {
     color: #000;
+}
+
+@media (max-width:700px) {
+    .activity-title {
+        font-size: 1.2rem;
+    }
+
+    .date {
+        font-size: .5rem;
+    }
+
+    .activity-text {
+        font-size: .9rem;
+    }
+
+    .read-more {
+        padding: 5px;
+        font-size: .7rem;
+    }
+}
+
+@media (min-width:700px) and (max-width: 1000px) {
+    .activity-title {
+        font-size: 1.5rem;
+    }
+    
+    .date {
+        font-size: .7rem;
+    }
+    
+    .activity-text {
+        font-size: 1.2rem;
+    }
+    
+    .read-more {
+        padding: 7px;
+        font-size: .9rem;
+    }
 }

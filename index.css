@@ -121,7 +121,7 @@ body .donate:hover {
 }
 
 .first-box {
-    width: 70%;
+    width: 100%;
     padding-left: 20px;
     background-color: #DCFEC1;
     display: flex;
@@ -166,9 +166,20 @@ body .donate:hover {
 }
 
 .second-box {
-    width: 30%;
-    background: #f2c87a;
-    background: linear-gradient(180deg, rgba(242, 200, 122, 1) 41%, rgba(255, 255, 255, 1) 100%);
+     display: none;
+}
+
+@media (min-width:900px) {
+
+    .first-box {
+        width: 70%;
+    }
+    .second-box {
+        display: block;
+        width: 30%;
+        background: #f2c87a;
+        background: linear-gradient(180deg, rgba(242, 200, 122, 1) 41%, rgba(255, 255, 255, 1) 100%);
+    }
 }
 
 .hero-img {
@@ -232,6 +243,70 @@ body .donate:hover {
     font-size: 1.2rem;
 }
 
+
+/* @media (max-width: 500px) {
+    .impact-conc {
+        height: 100%;
+    }
+
+    .overlay {
+        padding-bottom: 40px;
+    }
+    .impact {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 150px;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 700px){
+    .impact-conc {
+        height: 100%;
+    }
+
+    .overlay {
+        padding-bottom: 40px;
+    }
+
+    .impact {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 150px 150px;
+    }
+} */
+
+@media (max-width: 900px) {
+    .green {
+        color: #15EB89;
+    }
+    
+    .orange {
+        color: #f2c87a;
+    }
+
+    .numbers {
+        border: none;
+        padding: 0;
+        font-size: 3.5rem;
+    }
+
+    .text {
+        font-size: 1.5rem;
+    }
+    .impact-conc {
+        height: 100%;
+    }
+
+    .overlay {
+        padding-bottom: 40px;
+    }
+
+    .impact {
+        display: grid;
+        justify-content: center;
+    }
+}
+
 .who-we-are {
     display: grid;
     justify-content: center;
@@ -265,6 +340,74 @@ body .donate:hover {
 .name {
     font-weight: 700;
     margin-bottom: 5px;
+}
+
+@media (max-width: 500px) {
+    .who-we-are {
+        display: block;
+        margin: 0 20px;
+    }
+
+    .texts p {
+        font-size: .8rem;
+    }
+
+    .text-info img {
+        width: 100px;
+        height: 80px;
+    }
+
+    .staff-img img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .quote {
+        font-size: .8rem;
+        margin: 1rem 0;
+    }
+
+    .name {
+        font-size: 1rem;
+    }
+
+    .title {
+        font-size: .9rem;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 800px){
+    .who-we-are {
+        display: block;
+        margin: 0 20px;
+    }
+
+    .texts p {
+        font-size: .9rem;
+    }
+
+    .text-info img {
+        width: 120px;
+        height: 150px;
+    }
+
+    .staff-img img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .quote {
+        font-size: 1rem;
+        margin: 1rem 0;
+    }
+
+    .name {
+        font-size: 1.2rem;
+    }
+
+    .title {
+        font-size: 1rem;
+    }
 }
 
 
@@ -318,6 +461,24 @@ form {
 
 input::placeholder {
     color: rgba(0, 0, 0, 0.59);
+}
+
+@media (max-width: 800px) {
+    .newsletter {
+        padding-top: 90px;
+        padding-bottom: 90px;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .newsletter-text {
+        margin-bottom: 30px;
+        max-width: 320px;
+    }
+
+    .newsletter-input {
+        width: 320px;
+    }
 }
 
 .footer {
@@ -396,4 +557,62 @@ footer {
     text-align: center;
     margin-top: 3px;
     font-size: .75rem;
+}
+
+@media (max-width: 800px) {
+    footer {
+        min-width: 100%
+    }
+
+    .footer {
+        display: block;
+        padding: 0;
+    }
+
+    .footer-links li a {
+        font-size: .7rem;
+        padding: .7rem;
+    }
+
+    .copy-right {
+        font-size: .5rem;
+    }
+
+    .newsletter-p {
+        font-size: .7rem;
+    }
+
+    .footer-btn {
+        font-size: .7rem;
+        padding: 10px 7px;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 900px){
+    footer {
+        min-width: 100%
+    }
+
+    .footer {
+        display: block;
+        padding: 0;
+    }
+
+    .footer-links li a {
+        font-size: .9rem;
+        padding: .7rem;
+    }
+
+    .copy-right {
+        font-size: .7rem;
+    }
+
+    .newsletter-p {
+        font-size: .9rem;
+    }
+
+    .footer-btn {
+        font-size: .8rem;
+        padding: 10px 7px;
+    }
 }
