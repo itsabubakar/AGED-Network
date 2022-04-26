@@ -3,7 +3,7 @@ img {
 }
 
 .skill-program-conc {
-    background-color: #f4f0f0;
+    background-color: hsla(0, 0%, 100%, 0.422);
 }
 
 .skill-programs {
@@ -19,7 +19,7 @@ img {
 }
 
 .skill {
-    background-color: #fff;
+    background-color: #f7f6f6;
     padding: 10px;
     max-width: 250px;
     margin-top: 30px;
@@ -53,4 +53,25 @@ img {
 
 .apply-btn:hover {
     color: #000;
+}
+
+@media (max-width: 550px) {
+    .skills {
+        grid-template-columns: repeat(1, 250px);
+        
+    }
+}
+
+@media (min-width: 550px) and (max-width: 900px){
+    .skills {
+        grid-template-columns: repeat(2, 250px);
+
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1100px) {
+    .skills {
+        grid-template-columns: repeat(3, 250px);
+
+    }
 }
