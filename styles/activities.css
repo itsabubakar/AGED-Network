@@ -1,5 +1,6 @@
+
 .main-activities {
-    background-color: #E0DEDE;
+    background-color: #f4f0f0;
 }
 
 img {
@@ -78,7 +79,7 @@ img {
 }
 
 .activity-text {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     margin-bottom: 5px;
 }
 

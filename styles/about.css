@@ -25,6 +25,10 @@
     max-width: 400px;
 }
 
+.about-p p {
+line-height: 1.6;
+}
+
 .bottom {
     margin-top: 60px;
 }

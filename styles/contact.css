@@ -1,6 +1,6 @@
 .contact {
     background-color: #eeefedf6;
-    height: 300px;
+    padding-bottom: 60px;
 }
 
 .contact-items {
@@ -15,6 +15,8 @@
     background-color: #fff;
     padding: 30px;
     text-align: center;
+    width: 300px;
+    height: 250px;
 }
 
 .contacts > *{

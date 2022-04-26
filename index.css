@@ -121,7 +121,7 @@ body .donate:hover {
 }
 
 .first-box {
-    width: 50%;
+    width: 70%;
     padding-left: 20px;
     background-color: #DCFEC1;
     display: flex;
@@ -152,6 +152,13 @@ body .donate:hover {
 
 .first-box h3 {
     margin-top: 16px;
+    font-size: 2rem;
+    color: rgb(32, 31, 31);
+}
+
+.parag {
+    font-size: 1.2rem;
+    line-height: 1.6;
 }
 
 .parag > *{
@@ -159,7 +166,7 @@ body .donate:hover {
 }
 
 .second-box {
-    width: 50%;
+    width: 30%;
     background: #f2c87a;
     background: linear-gradient(180deg, rgba(242, 200, 122, 1) 41%, rgba(255, 255, 255, 1) 100%);
 }
@@ -178,7 +185,7 @@ body .donate:hover {
 
 .impact-conc {
     height: 500px;
-    background: url(./pool/pexels-shelagh-murphy-2883380.jpg) center center;
+    background: url(./assets/img/impact-bg.jpg) center center;
     background-size: cover;
     color: #f5f5f5;
 }
