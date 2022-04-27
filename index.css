@@ -137,13 +137,13 @@ body .donate:hover {
 
 .first-box {
     width: 100%;
-    padding-left: 20px;
     background-color: #DCFEC1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: 1.4rem;
+    padding: 40px 0;
 }
 
 .donate-btn {
