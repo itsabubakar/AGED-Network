@@ -100,3 +100,36 @@
     margin-bottom: 14px;
     line-height: 1.6;
 }
+
+@media (max-width:800px) {
+    .form-conc {
+        justify-content: center;
+    }
+}
+
+@media (max-width:500px) {
+
+    .form-conc {
+        margin: 0 20px;
+    }
+    .form {
+        width: auto;
+        padding: 0 50px;
+    }
+
+    .form-items {
+        grid-template-columns: repeat(2, 100px);
+    }
+    .form-btn {
+        width: 100px;
+    }
+
+    .next-btn-conc {
+        margin-bottom: 30px;
+        margin-right: 0px;
+    }
+
+    .form-btn {
+        width: 100%;
+    }
+}

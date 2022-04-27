@@ -1,5 +1,5 @@
 .contact {
-    background-color: #eeefedf6;
+    background-color: #fcfcfc;
     padding-bottom: 60px;
 }
 
@@ -7,15 +7,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 60px;
     height: 100%;
 }
 
 .contacts {
-    background-color: #fff;
+    background-color: #eeefedf6;
+    border-radius: 3px;
     padding: 30px;
     text-align: center;
-    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
     height: 250px;
 }
 
@@ -48,4 +50,24 @@
     height: 50px;
     background-size: contain;
     border: none;
+}
+
+@media (max-width: 700px) {
+    .contact-items {
+        display: grid;
+        grid-template-columns: 300px;
+        justify-content: center;
+        gap: 20px;
+        
+}
+}
+
+@media (min-width: 700px) and (max-width: 1000px){
+
+    .contact-items {
+        display: grid;
+        grid-template-columns: 300px 300px;
+        justify-content: center;
+        gap: 20px;
+    }
 }
