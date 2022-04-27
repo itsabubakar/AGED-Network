@@ -372,9 +372,13 @@ body .donate:hover {
         height: 80px;
     }
 
+    .staff-info {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
     .staff-img img {
-        width: 100px;
-        height: 100px;
+        width: 100%;
+        height: 100%;
     }
 
     .quote {
@@ -407,8 +411,8 @@ body .donate:hover {
     }
 
     .staff-img img {
-        width: 100px;
-        height: 100px;
+        width: 200px;
+        height: 200px;
     }
 
     .quote {
