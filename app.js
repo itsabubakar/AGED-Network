@@ -2,6 +2,27 @@
 const primaryNav = document.querySelector('.primary-nav');
 const navToggle = document.querySelector('.mobile-nav-toggle');
 
+// New Navbar
+
+const open = document.querySelector('.open');
+const close = document.querySelector('.close');
+
+open.addEventListener('click', () => {
+        primaryNav.setAttribute('data-visible', true)
+        navToggle.setAttribute('aria-expanded', true)
+        open.classList.add('hidden')
+        close.classList.add('show');
+})
+
+close.addEventListener('click', () => {
+        primaryNav.setAttribute('data-visible', false)
+        navToggle.setAttribute('aria-expanded', false)
+        open.classList.remove('hidden')
+        close.classList.remove('show');
+})
+
+
+
 // counter
 const counters = document.querySelectorAll('.numbers');
 const speed = 400;
@@ -59,14 +80,14 @@ counters.forEach(counter => {
 
 // navbar opening and closing functionality
 
-navToggle.addEventListener('click', ()=> {
-    const visibility = primaryNav.getAttribute('data-visible');
+// navToggle.addEventListener('click', ()=> {
+//     const visibility = primaryNav.getAttribute('data-visible');
 
-    if(visibility === "false") {
-        primaryNav.setAttribute('data-visible', true)
-        navToggle.setAttribute('aria-expanded', true)
-    } else if (visibility === "true") {
-        primaryNav.setAttribute('data-visible', false)
-        navToggle.setAttribute('aria-expanded', false)
-    }
-})
+//     if(visibility === "false") {
+//         primaryNav.setAttribute('data-visible', true)
+//         navToggle.setAttribute('aria-expanded', true)
+//     } else if (visibility === "true") {
+//         primaryNav.setAttribute('data-visible', false)
+//         navToggle.setAttribute('aria-expanded', false)
+//     }
+// })

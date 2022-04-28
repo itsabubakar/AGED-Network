@@ -130,17 +130,27 @@ body .donate:hover {
         display: block;
         position: absolute;
         z-index: 9999;
-        background-color: transparent;
-        background-image: url('./assets/icons/icons8-menu-24.png');
         width: 1.5rem;
         border: 0;
         aspect-ratio: 1;
         right: 2rem;
     }
 
-    .mobile-nav-toggle[aria-expanded="true"] {
+    /* .mobile-nav-toggle[aria-expanded="true"] {
         background-image: url('./assets/icons/icons8-close-24.png');
+    } */
+
+    .close {
+        display: none;
     }
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
 }
 
 /* Scroll */
