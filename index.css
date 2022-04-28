@@ -40,11 +40,6 @@ header {
     display: none;
 }
 
-.flex {
-    display: flex;
-    gap: var(--gap, 3rem);
-}
-
 .logo {
     width: 200px;
     height: 50px;
@@ -153,6 +148,11 @@ body .donate:hover {
 
 .show {
     display: block;
+}
+
+.flex {
+    display: flex;
+    gap: var(--gap, 3rem);
 }
 
 /* Scroll */
