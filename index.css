@@ -31,7 +31,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 40px;
+    padding: 0 40px;
+    z-index: 9999;
+    transition: all .5s ease-in;
 }
 
 .mobile-nav-toggle {
@@ -40,7 +42,7 @@ header {
 
 .flex {
     display: flex;
-    gap: var(--gap, 2.5rem);
+    gap: var(--gap, 3rem);
 }
 
 .logo{
@@ -82,10 +84,20 @@ body .donate {
     border-radius: 5px;
 }
 
+body .active {
+    padding-bottom: 9px;
+    color: rgba(0, 0, 0, 0.503);
+    border-bottom: 1px solid #15eb8b81;
+}
+
+.donate-active {
+    color: #000;
+}
+
 .primary-nav a:hover {
     color: rgba(0, 0, 0, 0.503);
-    padding-bottom: 9px;
     border-bottom: 1px solid #15EB89;
+    padding-bottom: 9px;
 }
 
 body .donate:hover {
@@ -98,7 +110,7 @@ body .donate:hover {
         --gap: 2em;
         position: fixed;
         z-index: 1000;
-        inset: 0 0 0 60%;
+        inset: 0 0 0 50%;
 
         flex-direction: column;
         padding: min(20vh, 5rem) 2em;
@@ -130,6 +142,34 @@ body .donate:hover {
         background-image: url("assets/icons/icons8-close-24.png");
     }
 }
+
+/* Scroll */
+
+@media (min-width: 50em) {
+
+    header {
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        justify-content: space-around;
+
+    }
+
+    .scroll-down header {
+        transform: translate3d(0, -100%, 0);
+        transition: all 300ms ease-in-out;
+    }
+    
+    .scroll-up header {
+        position: fixed;
+        height: 60px;
+        filter: drop-shadow(0 -10px 20px rgb(170,170,170));
+    }
+}
+
+/* End of Scroll */
+
 
 .hero {
     display: flex;
@@ -207,6 +247,8 @@ body .donate:hover {
     border: 7px solid #15EB89;
     border-radius: 50%;
     padding: 50px;
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 .impact-conc {
