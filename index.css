@@ -99,11 +99,15 @@ body .donate:hover {
     color: #000;
 }
 
+    .mobile-nav-toggle img{
+        display: none;
+    }
+
 @media (max-width: 50em) {
 
     .primary-nav {
         display: flex;
-        --gap: 2em;
+        gap: 2em;
         position: fixed;
         z-index: 1000;
         top: 0px;
@@ -112,7 +116,8 @@ body .donate:hover {
         left: 50%;
 
         flex-direction: column;
-        padding: min(20vh, 5rem) 2em;
+        /* padding: min(20vh, 5rem) 2em; */
+        padding: 3.3em;
 
         background: #f9f5f5;
 
@@ -122,6 +127,10 @@ body .donate:hover {
 
     .primary-nav[data-visible="true"] {
         transform: translateX(0%);
+    }
+
+    .mobile-nav-toggle img {
+        display: block;
     }
 
     .mobile-nav-toggle {
