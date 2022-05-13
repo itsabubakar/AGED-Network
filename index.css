@@ -200,10 +200,6 @@ body .donate:hover {
 .first-box {
     width: 100%;
     background-color: #DCFEC1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     font-size: 1.4rem;
     padding: 40px 0;
 }
@@ -222,16 +218,21 @@ body .donate:hover {
     color: #000;
 }
 
-.first-box h3,
+.first-box h2, h3,
 .parag {
     max-width: 70%;
     padding: 10px 0;
 }
 
-.first-box h3 {
-    margin-top: 16px;
-    font-size: 2rem;
-    color: #000;
+.first-box h2,
+h3 {
+    color: rgb(18, 17, 17);
+}
+
+
+.first-box-conc {
+    width: 100%;
+    margin-left: 10%;
 }
 
 .parag {
