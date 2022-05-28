@@ -22,6 +22,10 @@ body {
     color: rgb(25, 24, 24);
 }
 
+.heading h2 {
+    font-weight: 500;
+}
+
 .our-impact {
     color: #fff;
 }
@@ -103,7 +107,7 @@ body .donate:hover {
         display: none;
     }
 
-@media (max-width: 50em) {
+@media (max-width: 65em) {
 
     .primary-nav {
         display: flex;
@@ -174,7 +178,7 @@ body .donate:hover {
         left: 0;
         width: 100%;
         background-color: #fff;
-        justify-content: space-around;
+        justify-content: space-between;
 
     }
 
@@ -223,6 +227,7 @@ body .donate:hover {
     max-width: 70%;
     padding: 10px 0;
 }
+
 
 .first-box h2,
 h3 {
@@ -291,9 +296,10 @@ h3 {
 
 .green-line {
     display: inline-block;
-    height: 2px;
-    background-color: #15EB89;
+    height: 3.5px;
+    background-color: #FAA509;
     width: 70px;
+    border-radius: 5px;
 }
 
 .impact {
