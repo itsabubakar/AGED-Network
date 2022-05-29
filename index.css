@@ -86,7 +86,7 @@ body .donate {
 body .active {
     padding-bottom: 9px;
     color: rgba(0, 0, 0, 0.503);
-    border-bottom: 1px solid #15eb8b81;
+    border-bottom: 2px solid #15eb8b81;
 }
 
 .donate-active {
@@ -95,7 +95,7 @@ body .active {
 
 .primary-nav a:hover {
     color: rgba(0, 0, 0, 0.503);
-    border-bottom: 1px solid #15EB89;
+    border-bottom: 2px solid #15EB89;
     padding-bottom: 9px;
 }
 
@@ -330,6 +330,36 @@ h3 {
     padding: 10px 0;
     max-width: 800px;
     font-size: 1.2rem;
+}
+
+/* hide paragraphs */
+
+.texts p{
+    display: none;
+}
+
+.texts .p-active{
+    display: block;
+}
+
+.text-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.text-tab-btn {
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin: 10px 16px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.btn-active {
+    color: #15EB89;
 }
 
 

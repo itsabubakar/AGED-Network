@@ -4,14 +4,8 @@
 }
 
 .first-conc-box {
-    width: 70%;
+    width: 100%;
     background-color: #DCFEC1;
-}
-
-.second-conc-box {
-    width: 30%;
-    background: #f2c87a;
-    background: linear-gradient(180deg, rgba(242, 200, 122, 1) 41%, rgba(255, 255, 255, 1) 100%);
 }
 
 .first-conc-box-text {
@@ -32,11 +26,11 @@
     color: #111211a3;
 }
 
-.first-conc-links .active {
+.first-conc-links .highlight {
     color: #FAA509;
 }
 
-@media (max-width:800px) {
+/* @media (max-width:800px) {
     .first-conc-box {
         width: 80%;
     }
@@ -44,5 +38,5 @@
     .second-conc-box {
         width: 20%;
     }
-}
+} */
 
