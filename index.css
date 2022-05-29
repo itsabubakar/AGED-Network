@@ -121,7 +121,7 @@ body .donate:hover {
 
         flex-direction: column;
         /* padding: min(20vh, 5rem) 2em; */
-        padding: 3.3em;
+        padding: 2em;
 
         background: #f9f5f5;
 
@@ -240,6 +240,19 @@ h3 {
     margin-left: 10%;
 }
 
+@media (max-width:500px) {
+    .first-box-conc {
+        width: auto;
+            margin-left:20px;
+            margin-right:20px;
+        }
+
+    .first-box h2, h3, .parag {
+         max-width: 100%;
+         padding: 10px 0;
+                }
+}
+
 .parag {
     font-size: 1.2rem;
     line-height: 1.6;
@@ -342,9 +355,22 @@ h3 {
     display: block;
 }
 
+.text-btn-conc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 22px 0 0 0;
+}
+
+.text-btn-conc .green-line{
+    margin-top: 9px;
+    background-color: #15EB89;
+}
+
 .text-btn {
     display: flex;
     justify-content: center;
+    margin-bottom: 10px;
 }
 
 .text-tab-btn {
@@ -455,6 +481,12 @@ h3 {
 
 .quote {
     margin: 2rem 0;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.873);
+}
+
+.title {
+    letter-spacing: 2px;
 }
 
 .name {
@@ -463,6 +495,10 @@ h3 {
 }
 
 @media (max-width: 500px) {
+
+    .heading h2 {
+        font-size: 100%;
+    }
     .who-we-are {
         display: block;
         margin: 0 20px;
@@ -580,7 +616,7 @@ form {
 }
 
 .submit:hover {
-    color: #000;
+    color: rgba(0, 0, 0, 0.789);
     cursor: pointer;
 }
 
@@ -701,7 +737,7 @@ footer {
     }
 
     .copy-right {
-        font-size: .5rem;
+        font-size: .6rem;
     }
 
     .newsletter-p {
