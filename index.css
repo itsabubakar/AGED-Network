@@ -482,7 +482,7 @@ h3 {
 .quote {
     margin: 2rem 0;
     font-style: italic;
-    color: rgba(0, 0, 0, 0.873);
+    color: rgba(0, 0, 0, 0.7);
 }
 
 .title {
@@ -492,6 +492,7 @@ h3 {
 .name {
     font-weight: 700;
     margin-bottom: 5px;
+    margin-top: 16px;
 }
 
 @media (max-width: 500px) {
