@@ -76,6 +76,7 @@ header {
     font-size: 1.1rem;
 }
 
+
 body .donate {
     background-color: #15EB89;
     padding: 10px 12px;
@@ -84,9 +85,12 @@ body .donate {
 }
 
 body .active {
-    padding-bottom: 9px;
-    color: rgba(0, 0, 0, 0.503);
-    border-bottom: 2px solid #15eb8b81;
+    padding-bottom: 5px;
+    color: #15eb8bdc;
+}
+
+.feather-chevron-down {
+    color: #FAA509;
 }
 
 .donate-active {
@@ -95,9 +99,72 @@ body .active {
 
 .primary-nav a:hover {
     color: rgba(0, 0, 0, 0.503);
-    border-bottom: 2px solid #15EB89;
-    padding-bottom: 9px;
+    /* border-bottom: 2px solid #15EB89; */
+    /* padding-bottom: 5px; */
 }
+
+/* Drop down */
+
+.nav-list-item {
+    position: relative;
+}
+
+.nav-drop-down {
+    list-style: none;
+    text-transform: capitalize;
+    position: absolute;
+    top: 2rem;
+    box-shadow: 0 0 10px lightgray;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 15rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 100ms ease-in-out;
+}
+
+.nav-drop-down li {
+    list-style: none;
+    width: 100%;
+    padding: .15rem 1rem;
+    transition: background-color 200ms ease-in-out;
+    padding-bottom: 9px;
+    border-bottom: 1px solid rgba(90, 87, 87, 0.149);
+}
+
+.nav-drop-down li a{
+    font-size: 1rem;
+}
+
+.nav-list-item-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-drop-down li a:hover {
+    padding-bottom: 2px;
+}
+
+.main-link {
+    display: inline-flex;
+    align-content: center;
+}
+
+/* Icon */
+
+.feather-chevron-down {
+    display: inline;
+    width: 15px;
+    margin-top: 1.5px;
+    margin-left: 2px;
+}
+
+
+/* End of drop down */
 
 body .donate:hover {
     color: #000;
@@ -111,19 +178,19 @@ body .donate:hover {
 
     .primary-nav {
         display: flex;
-        gap: 2em;
+        gap: 2rem;
         position: fixed;
         z-index: 1000;
         top: 0px;
         right: 0px;
         bottom: 0px;
-        left: 50%;
+        left: 40%;
 
         flex-direction: column;
         /* padding: min(20vh, 5rem) 2em; */
         padding: 2em;
 
-        background: #f9f5f5;
+        background: #ffffff;
 
         transform: translateX(100%);
         transition: transform 350ms ease-out;
@@ -131,6 +198,10 @@ body .donate:hover {
 
     .primary-nav[data-visible="true"] {
         transform: translateX(0%);
+    }
+
+    .primary-nav a {
+        color: rgba(0, 0, 0, 0.816);
     }
 
     .mobile-nav-toggle img {
@@ -147,13 +218,33 @@ body .donate:hover {
         right: 2rem;
     }
 
-    /* .mobile-nav-toggle[aria-expanded="true"] {
-        background-image: url('./assets/icons/icons8-close-24.png');
-    } */
-
     .close {
         display: none;
     }
+
+    .nav-drop-down {
+    position: static;
+    display: block;
+    background-color: inherit;
+    box-shadow: none;
+    width: 15rem;
+    height: 100%;
+    margin: -25px 0;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5rem;
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-drop-down li {
+    list-style: none;
+    padding: 5px 0;
+    transition: background-color 200ms ease-in-out;
+    border: none;
+}
 }
 
 .hidden {
@@ -166,7 +257,13 @@ body .donate:hover {
 
 .flex {
     display: flex;
-    gap: var(--gap, 3rem);
+    gap: var(--gap, 2.5rem);
+}
+
+@media (max-width: 65em) {
+    .flex{
+        gap: 1.5rem;
+    }
 }
 
 /* Scroll */

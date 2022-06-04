@@ -22,6 +22,25 @@ close.addEventListener('click', () => {
 })
 
 
+// hover effect
+
+const hoverNav = document.querySelectorAll('.nav-list-item');
+
+hoverNav.forEach(hover => {
+    hover.addEventListener('mouseenter', ()=> {
+        const visibleNav = hover.childNodes[2];
+        visibleNav.classList.add('nav-list-item-visible')
+    })
+
+    hover.addEventListener('mouseleave', ()=> {
+        const visibleNav = hover.childNodes[2];
+        visibleNav.classList.remove('nav-list-item-visible')
+    })
+})
+
+// End of nav hover effect
+
+
 
 // counter
 const counters = document.querySelectorAll('.numbers');
