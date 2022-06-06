@@ -31,13 +31,9 @@
     color: #FAA509;
 }
 
-/* @media (max-width:800px) {
-    .first-conc-box {
-        width: 80%;
-    }
-    
-    .second-conc-box {
-        width: 20%;
-    }
-} */
+@media (max-width:450px) {
+    .first-conc-box-text {
+     margin: 7px 20px;
+}
+}
 
