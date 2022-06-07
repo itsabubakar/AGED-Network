@@ -54,3 +54,7 @@
     padding: 20px;
 }
 
+.photo-gallery-overlay a { 
+    color: #fff;
+    text-decoration: none;
+}

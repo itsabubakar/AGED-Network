@@ -6,7 +6,7 @@ photoConc.forEach(function (btn) {
     btn.addEventListener('mouseenter', function(e){
         const hoverElem = btn.childNodes[3].childNodes[1];
         console.log(hoverElem);
-        hoverElem.style.fontSize = '22px';
+        hoverElem.style.fontSize = '20px';
     })
 
     btn.addEventListener('mouseleave', function(e){

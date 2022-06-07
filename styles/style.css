@@ -19,19 +19,20 @@
 }
 
 .first-conc-links a {
-    color: #000;
+    color: rgba(0, 0, 0, 0.736);
     text-decoration: none;
+    font-size: .9rem;
 }
 
 .first-conc-links a:hover {
-    color: #111211a3;
+    color: #FAA509;
 }
 
 .first-conc-links .highlight {
     color: #FAA509;
 }
 
-@media (max-width:450px) {
+@media screen and (max-width:450px) {
     .first-conc-box-text {
      margin: 7px 20px;
 }
