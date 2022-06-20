@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-/* img {
-    width: 100%;
-    height: 100%;
-} */
 
 body {
     overflow-x: hidden;
@@ -99,8 +95,6 @@ body .active {
 
 .primary-nav a:hover {
     color: rgba(0, 0, 0, 0.503);
-    /* border-bottom: 2px solid #15EB89; */
-    /* padding-bottom: 5px; */
 }
 
 /* Drop down */
@@ -322,9 +316,12 @@ body .donate:hover {
 .first-box h2, h3,
 .parag {
     max-width: 70%;
-    padding: 10px 0;
+    /* padding: 10px 0; */
 }
 
+.first-box h2 {
+    text-transform: uppercase;
+}
 
 .first-box h2,
 h3 {
@@ -548,6 +545,29 @@ h3 {
         display: grid;
         justify-content: center;
     }
+}
+
+.view-more {
+    padding-top: 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000b4;
+    border-bottom: 1px solid #000000b4;
+}
+
+.view-more:hover {
+    color: #15EB89;
+    border-bottom: 1px solid #15EB89;
+}
+
+.view-more-conc {
+    text-align: center;
+}
+
+.mgb {
+    margin-bottom: 60px;
 }
 
 .who-we-are {
