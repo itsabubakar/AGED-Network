@@ -1,0 +1,43 @@
+.heading h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    margin: 0 40px;
+    margin-bottom: 60px;
+}
+
+.about-conc {
+    max-width: 1000px;
+    display: grid;
+    justify-items: center;
+}
+
+.main-img img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.text-conc {
+    max-width: 800px;
+    margin-top: 30px;
+}
+
+.full-width-text p {
+    margin-top: 22px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+    .heading h2 {
+    text-align: left;
+}
+  .full-width-text p {
+    margin-top: 22px;
+}
+}
