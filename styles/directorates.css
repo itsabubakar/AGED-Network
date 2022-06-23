@@ -1,0 +1,17 @@
+.directorates {
+    margin: 0 30px;
+    margin-bottom: 60px;
+    display: grid;
+    justify-items: center;
+    line-height: 1.5;
+    font-size: 1.1rem;
+}
+
+.directorate {
+    max-width: 900px;
+}
+
+.directorate p{
+   margin-top: 22px;
+   font-weight: 400;
+}
