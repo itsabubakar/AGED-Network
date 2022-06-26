@@ -1,0 +1,17 @@
+.img-conc {
+    margin: 22px 0;
+}
+
+.img-conc img {
+    width: 100%;
+    min-height: 130px;
+    max-height: 350px;
+    border-radius: 3px;
+    margin-top: 16px;
+}
+
+@media (max-width: 500px) {
+    .flex {
+        display: block;
+    }
+}

@@ -26,17 +26,12 @@ img {
     height: 180px;
 }
 
-.activities-name {
-    margin: 10px 5px;
-    color: rgba(0, 0, 0, 0.671);
-    text-transform: capitalize;
-    font-size: 1rem;
-}
-
 .activities-info {
     margin: 10px 5px;
     font-size: 1rem;
     text-transform: capitalize;
+    font-weight: 600;
+    text-decoration: underline;
 }
 
 .apply-btn {
