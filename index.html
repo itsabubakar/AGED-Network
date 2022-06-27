@@ -21,6 +21,7 @@
       sizes="16x16"
       href="./assets/img/favicon-16x16.png"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="./styles/activities.css">
@@ -313,7 +314,7 @@
           </p>
         </div>
         <div class="form">
-          <form action="">
+          <form action="" class="form-conc">
             <input type="text" placeholder="Name" class="newsletter-input" />
             <input type="text" placeholder="Email" class="newsletter-input" />
             <input
@@ -325,39 +326,66 @@
         </div>
       </section>
 
-      <section class="footer">
-        <div class="footer-max-width">
-          <footer>
-            <div class="footer-conc">
-              <div class="link-column">
-                <ul class="footer-links">
-                  <li><a href="./index.html">home</a></li>
-                  <li><a href="./pages/activities.html">activities</a></li>
-                  <li><a href="./pages/skills.html">program</a></li>
-                </ul>
-              </div>
+      <footer class="footer">
+        <div class="footer-logo">
+          <div class="logo-conc">
+            <!-- <img src="./assets/img/aged-network-logo.png" alt="" srcset=""> -->
+            <div class="social-media-conc">
+              <ul class="social">
+                <li>
+                  <a href="https://twitter.com/" title="" class="twitter-icon">
+                    <span class="icon fa fa-twitter"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/" title="" class="facebook-icon">
+                    <span class="icon fa fa-facebook"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://plus.google.com/" title="" class="instagram-icon">
+                    <span class="icon fa fa-instagram"></span>
+                  </a>
+                </li>
 
-              <div class="link-column">
-                <ul class="footer-links">
-                  <li><a href="./pages/about.html">about</a></li>
-                  <li><a href="./pages/contact.html">contact</a></li>
-                </ul>
-              </div>
-
-              <div class="link-column">
-                <p class="newsletter-p">newsletter</p>
-                <button class="footer-btn">Subscribe</button>
-              </div>
+                <li>
+                  <a href="https://plus.google.com/" title="" class="youtube-icon">
+                    <span class="icon fa fa-youtube"></span>
+                  </a>
+                </li>
+              </ul>
             </div>
-
-            <hr class="bottom-line" />
-
-            <div class="copy-right">
-              Copyright ©2021 Aged Network. All Rights Reserved.
-            </div>
-          </footer>
+            <p class="caption">AGED-Network</p>
+          </div>
+          <p class="copyright">© 2022, AGED-Network. All rights reserved.</p>
         </div>
-      </section>
+
+        <div class="footer-links">
+          <h2>ADDITIONAL MENU</h2>
+          <div class="footer-nav-conc">
+            <ul class="first-column">
+              <li><a href="./index.html">home</a></li>
+              <li><a href="./pages/directorates.html">directorates</a></li>
+              <li><a href="./pages/activities.html">activities</a></li>
+              <li><a href="./pages/photo-gallery.html">photo gallery</a></li>
+            </ul>
+            <ul class="second-column">
+              <li><a href="./pages/about.html">about us</a></li>
+              <li><a href="./pages/contact.html">contact</a></li>
+              <li><a href="./pages/donate.html">donate</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-newsletter">
+          <h2>GET A NEWSLETTER</h2>
+          <p>Learn about AGED-Network through highly our informative  newsletters</p>
+          <form action="" class="newsletter-form">
+            <input type="text" class="email" placeholder="E-mail">
+            <input type="submit" value="subscribe" class="subscribe-btn">
+          </form>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

@@ -693,7 +693,7 @@ h3 {
 
 .newsletter {
     display: flex;
-    background-color: #f5f5f5;
+    background-color: #dede;
     align-items: center;
     justify-content: center;
     height: 300px;
@@ -714,7 +714,7 @@ h3 {
     margin-right: 20px;
 }
 
-form {
+.form-conc {
     display: flex;
     flex-direction: column;
 }
@@ -761,139 +761,250 @@ input::placeholder {
     }
 }
 
+/* footer font sizes */
+
+:root {
+    /* font-sizes */
+    --fs-xl: 3.5rem;
+    --fs-800: 2.8rem;
+    --fs-700: 1.6rem;
+    --fs-600: 1.4rem;
+    --fs-500: 1.2rem;
+    --fs-400: 1rem;
+    --fs-300: .8rem;
+}
+
+@media (min-width: 35.5em) {
+    :root {
+    --fs-xl: 5rem;
+    --fs-800: 3.5rem;
+    --fs-700: 2.8rem;
+    --fs-600: 2.2rem;
+    --fs-500: 1.6rem;
+    --fs-400: 1.2rem;
+    --fs-300: .85rem;
+    }
+    
+}
+
+@media (min-width: 56.25em) {
+    :root {
+    --fs-xl: 8.75rem;
+    --fs-800: 3.75rem;
+    --fs-700: 3.25rem;
+    --fs-600: 2.4rem;
+    --fs-500: 1.625rem;
+    --fs-400: 1.3rem;
+    --fs-300: .9rem;
+    }
+
+}
+
 .footer {
-    padding: 0 40px;
-    background-color: #504B4B;
-    padding-bottom: 20px;
-    color: #fff;
-    display: flex;
+    display: grid;
+    grid-template-columns: 300px 240px 304px;
     justify-content: center;
+    column-gap: 100px;
+    margin: 100px;
+    line-height: 1.5;
 }
 
-footer {
-    min-width: 900px;
-    width: 100%;
-}
-
-.footer-conc {
+.footer-nav-conc {
     display: flex;
-    padding: 0 15px;
-    margin: 0 20px;
     justify-content: space-between;
 }
 
-.footer-links {
+.footer-nav-conc ul{
     list-style: none;
 }
 
-.footer-links li {
-    padding: .7rem 0;
+.footer .logo-conc {
+    display: flex;
+    align-items: baseline;
+    column-gap: 10px;
 }
 
-.footer-links li a {
-    text-decoration: none;
-    text-transform: uppercase;
+.footer-logo .caption{
+    font-size: var(--fs-400);
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.footer-logo .copyright {
+    font-size: var(--fs-300);
+    color: #777777;
+}
+
+ul.social {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  ul.social > li {
+    display: inline-block;
+  }
+  
+  ul.social > li > a {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 36px;
     color: #fff;
-    cursor: pointer;
-    font-size: .9rem;
+    margin: 0 3px 3px 0;
+  }
+  
+  ul.social > li > a:hover {
+    text-decoration: none;
+    background-color: #ee7c22;
+  }
+
+  .facebook-icon {
+    background: #3B5998;
+    color: white;
+  }
+
+  .twitter-icon {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .instagram-icon {
+    background: #ea4c89;
+    color: white;
+  }
+
+  .youtube-icon {
+    background: #bb0000;;
+    color: white;
+  }
+
+/* .footer-logo img {
+    width: 110px;
+    height: 45px;
+} */
+
+.footer h2 {
+    font-size: var(--fs-400);
+    font-weight: 600;
+    margin-bottom: 8px;
 }
 
-.footer-links li a:hover {
-    color: rgba(0, 0, 0, 0.927);
+.footer-nav-conc li{
+    margin: 5px 0;
 }
 
-.link-column {
-    margin-top: 20px;
-}
-
-.link-column p {
-    padding-top: .7rem;
+.footer-nav-conc a{
+    text-decoration: none;
+    color: #333;
     text-transform: uppercase;
+    font-size: var(--fs-300);
+    font-weight: 600;
 }
 
-.footer-btn {
-    margin-top: 10px;
-    border: none;
-    padding: 13px 10px;
-    border-radius: 5px;
+.footer-nav-conc a:hover {
+    color: #777777;
+    border-bottom: 1px solid #777777;
+}
+
+.footer .newsletter p {
+    font-size: 16px;
+    margin-top: 20px;
+    color: #777777;
+}
+
+.email {
+    width: 170px;
+    border: none;   
+    border-bottom: 1px solid #777777;
+}
+
+.footer .newsletter-form {
+    display: flex;
+    font-size: var(--fs-300);
+    outline: none;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.subscribe-btn {
+    font-size: .8rem;
+    text-transform: uppercase;
+    background: none;
+    border: 3px solid #15eb8bdc;
+    padding: 6px 12px;
+}
+
+.subscribe-btn:hover {
     color: #fff;
     background-color: #15EB89;
-    cursor: pointer;
-    text-transform: uppercase;
 }
 
-.footer-btn:hover {
-    color: #000;
-}
-
-.bottom-line {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: #15eb8b57;
-    height: 1px;
-    border: none;
-}
-
-.copy-right {
-    text-align: center;
-    margin-top: 3px;
-    font-size: .75rem;
-}
-
-@media (max-width: 800px) {
-    footer {
-        min-width: 100%
-    }
-
+@media (max-width:600px) {
     .footer {
-        display: block;
-        padding: 0;
+        grid-template-columns: 1fr;
+        margin: 50px 30px;
     }
 
-    .footer-links li a {
-        font-size: .7rem;
-        padding: .7rem;
+    .footer-logo {
+        margin-bottom: 50px;
     }
 
-    .copy-right {
-        font-size: .6rem;
+    .footer-links {
+        margin-bottom: 50px;
     }
 
-    .newsletter-p {
-        font-size: .7rem;
+    .footer .newsletter-form {
+        justify-content: inherit;
     }
 
-    .footer-btn {
-        font-size: .7rem;
-        padding: 10px 7px;
+    .subscribe-btn {
+        margin-left: 30px;
+    }
+
+    .footer-nav-conc {
+        display: flex;
+        justify-content: inherit;
+    }
+
+    .footer-nav-conc ul {
+         width: 50%;
     }
 }
 
-@media (min-width: 800px) and (max-width: 900px) {
-    footer {
-        min-width: 100%
-    }
-
+@media (min-width:600px) and (max-width: 1000px){
     .footer {
-        display: block;
-        padding: 0;
+        grid-template-columns: 1fr 1fr;
+        margin: 50px 30px;
+        column-gap: 0;
     }
 
-    .footer-links li a {
-        font-size: .9rem;
-        padding: .7rem;
+    .footer-logo {
+        margin-bottom: 50px;
     }
 
-    .copy-right {
-        font-size: .7rem;
+    .footer-links {
+        margin-bottom: 50px;
     }
 
-    .newsletter-p {
-        font-size: .9rem;
+    .footer .newsletter-form {
+        justify-content: inherit;
     }
 
-    .footer-btn {
-        font-size: .8rem;
-        padding: 10px 7px; 
+    .subscribe-btn {
+        margin-left: 30px;
+    }
+
+    .footer-nav-conc {
+        display: flex;
+        justify-content: inherit;
+    }
+
+    .footer-nav-conc ul {
+        width: 50%;
     }
 }
