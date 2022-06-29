@@ -41,11 +41,6 @@ hoverNav.forEach(hover => {
 // End of nav hover effect
 
 
-
-// counter
-const counters = document.querySelectorAll('.numbers');
-const speed = 400;
-
 // show navbar on scroll up
 
 const body = document.body;
@@ -72,27 +67,23 @@ window.addEventListener('scroll', () => {
     lastScroll = currentScroll;
 })
 
-// counter loop
+const buttons = document.querySelectorAll("[data-carousel-button]")
+console.log(buttons);
 
-counters.forEach(counter => {
-    const updateCount = () => {
-        const target = +counter.getAttribute('data-target');
-        const count = +counter.innerText;
-        const inc = target / speed;
 
-        if(count < target) {
-            counter.innerText = count + inc;
-            setTimeout(updateCount, 1)
-        } else{
-            counter.innerText = target;
-        }
+buttons.forEach(button => {
+    button.addEventListener('click', ()=> {
+        const offset = button.dataset.carouselButton === "next" ? 1 : -1;
+        const slides = button.closest("[data-carousel]").querySelector("[data-slides]")
 
-    }
+        const activeSlide = slides.querySelector("[data-active]")
+        let newIndex = [...slides.children].indexOf(activeSlide) + offset;
+        if(newIndex < 0) newIndex = slides.children.length -1;
+        if(newIndex >= slides.children.length) newIndex = 0;
 
-    // runs counter functionality after 520px
-    window.addEventListener("scroll", ()=> {
-    if(window.pageYOffset > 520) {
-       updateCount();
-    }
+        slides.children[newIndex].dataset.active = true;
+        delete activeSlide.dataset.active
+    })
 })
-});
+
+console.log(buttons);
