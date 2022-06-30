@@ -20,7 +20,7 @@
   }
 
 @media (max-width: 600px) {
-    .flex {
+    .mobile-flex {
         display: none;
     }
 }
