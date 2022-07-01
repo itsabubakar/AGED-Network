@@ -587,7 +587,7 @@ h3 {
 
 .staff-img img {
     width: 320px;
-    height: 500px;
+    height: 100%;
 }
 
 .staff-p {
