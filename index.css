@@ -800,6 +800,32 @@ input::placeholder {
 
 }
 
+.pagination-links {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    height: 20px;
+    color: rgba(0, 0, 0, 0.541);
+}
+
+.pagination-number {
+    padding: 0 20px;
+    align-self: center;
+}
+
+.pagination-number:hover,.pagination-icon:hover {
+    color: #000;
+}
+
+.pagination-link-active {
+    color: #000;
+}
+
+.pagination-number a{
+    color: inherit;
+    text-decoration: none;
+}
+
 .footer {
     display: grid;
     grid-template-columns: 300px 240px 304px;
